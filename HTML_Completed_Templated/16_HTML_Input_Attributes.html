@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!-- input attributes value , readonly , size , rows , cols-->
+    <div>
+        <label for="userName">User Name :</label>
+        <input type="text" id="userName" value="naveen">
+        <input type="submit" value="Send">
+    </div>
+
+    <!-- readonly Attribute -->
+    <div>
+        <label for="userName1">User Name :</label>
+        <input type="text" id="userName1" value="naveen" readonly>
+        <input type="submit" value="Send">
+    </div>
+
+    <!-- Size Attribute -->
+    <div>
+        <label for="userName2">User Name :</label>
+        <input type="text" id="userName2" value="naveen" size="50">
+        <input type="submit" value="Send">
+    </div>
+
+    <!-- rows , cols Attribute -->
+    <div>
+        <label for="message">Message :</label>
+        <textarea rows="10" cols="20" id="message"></textarea>
+        <input type="submit" value="Send">
+    </div>
+
+    <!-- HTML 5 Form Input Attributes required,
+    novalidate , autofocus , pattern , placeholder -->
+
+    <!-- Required Attribute -->
+    <div>
+        <form>
+            <label for="userName4">User Name
+                 <span style="color: red;">*</span>
+            </label>
+            <input type="text" id="userName4" required>
+            <input type="submit" value="send">
+        </form>
+    </div>
+
+    <!-- novalidate Attribute -->
+    <div>
+        <form novalidate>
+            <label for="userName5">User Name
+                <span style="color: red;">*</span>
+            </label>
+            <input type="text" id="userName5" required>
+            <input type="submit" value="send">
+        </form>
+    </div>
+
+    <!-- autofocus Attribute -->
+    <h3>Autofocus Attribute</h3>
+    <div>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" >
+            <label for="password">Password</label>
+            <input type="password" id="password" autofocus>
+            <input type="submit">
+        </form>
+    </div>
+
+    <!-- pattern Attribute -->
+    <h3>Pattern Attribute</h3>
+    <div>
+        <form>
+            <label for="name1">Your Name</label>
+            <input type="text" id="name1" pattern="^[A-Za-z0-9_]{1,15}$">
+            <input type="submit">
+        </form>
+    </div>
+
+    <!-- placeholder Attribute -->
+    <h3>Placeholder Attribute</h3>
+    <div>
+        <form>
+            <label for="name2">Enter Your Name :</label>
+            <input type="text" id="name2" placeholder="Enter Name">
+            <input type="submit">
+        </form>
+    </div>
+
+    <!-- disabled Attribute -->
+    <h3>Placeholder Attribute</h3>
+    <div>
+        <form>
+            <input type="text" placeholder="Enter Name" disabled>
+            <input type="submit" disabled>
+        </form>
+    </div>
+
+<br><br><br>
+</body>
+</html>
